@@ -1,3 +1,5 @@
 *.iml
 *.ipr
 *.iws
+spec/example_wiki_root/*.zip
+spec/example_wiki_root/files

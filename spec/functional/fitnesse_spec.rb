@@ -17,9 +17,8 @@ describe "A Fitnesse server" do
 
   def start_server
     dir = File.dirname(__FILE__)
-    wiki_root_path = File.expand_path("#{dir}/../example_wiki_root")
     Thread.start do
-      Fitnesse.new(port, wiki_root_path).start
+      Fitnesse.new(['-p', port, '-r', "../example_wiki_root"]).start
     end
 
     Timeout.timeout(5) do

@@ -1,14 +1,11 @@
-require "optparse"
-
 class Fitnesse
-  attr_reader :port, :root
-  def initialize(port, root)
-    @port = port
-    @root = root
+  attr_reader :argv
+  def initialize(argv)
+    @argv = argv
   end
 
   def start
-    system "java -cp #{jar_path} fitnesse.FitNesse -o -e 0 -p #{port} -r #{root}"
+    system "java -cp #{jar_path} fitnesse.FitNesse #{argv.join(' ')}"
   end
 
   def jar_path

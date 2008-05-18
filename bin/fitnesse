@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+dir = File.dirname(__FILE__)
+$:.unshift(File.expand_path("#{dir}/../lib"))
+require "fitnesse"
+require "optparse"
+
+Fitnesse.new(ARGV).start
