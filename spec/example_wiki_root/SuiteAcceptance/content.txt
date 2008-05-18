@@ -1,0 +1,4 @@
+!define COMMAND_PATTERN {ruby test/fitnesse/runner.rb -v}
+
+!contents -R
+
