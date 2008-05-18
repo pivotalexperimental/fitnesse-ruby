@@ -8,15 +8,14 @@ Gem::Specification.new do |s|
   s.description = "The fitnesse server packaged as a convenient gem."
   s.has_rdoc = true
   s.authors = ["Brian Takita"]
-  files = ["README.markdown", "Rakefile", "fitnesse-ruby.gemspec"]
-  files += Dir["bin/**/*.rb"]
-  files += Dir["lib/**/*.rb"]
-  files += Dir["core/fitnesse.jar"]
-  files += Dir["spec/functional/**/*.rb"]
-  files += ["spec/example_wiki_root"]
+  files = [
+    "README.markdown", "Rakefile", "fitnesse-ruby.gemspec", "bin/fitnesse",
+    "lib/fitnesse.rb", "core/fitnesse.jar", "spec/example_wiki_root",
+    "spec/functional/spec_helper.rb", "spec/functional/fitnesse_spec.rb"
+  ]
   s.files = files
   s.executables = ['fitnesse']
-  s.test_files = Dir["spec/functional/**/*.rb"]
+  s.test_files = ["spec/functional/fitnesse_spec.rb"]
   s.rdoc_options = ["--main", "README.markdown"]
   s.extra_rdoc_files = ["CHANGES", "README.markdown"]
 end
