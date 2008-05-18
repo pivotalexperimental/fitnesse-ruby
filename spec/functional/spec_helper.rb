@@ -7,6 +7,7 @@ require "spec"
 require "lsof"
 require "timeout"
 require "selenium"
+require "polonium"
 
 Spec::Runner.configure do |config|
   config.mock_with :rr
