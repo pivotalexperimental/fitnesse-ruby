@@ -1,31 +1,22 @@
 require File.expand_path("#{dir = File.dirname(__FILE__)}/spec_helper")
 
 describe "A Fitnesse server" do
-  attr_reader :port, :driver
+  attr_reader :port
   before do
     @port = 8081
     stop_server
   end
 
   after do
-    driver.stop if driver
     stop_server
   end
 
   it "starts a Fitnesse server" do
     start_server
-    @driver = Selenium::SeleniumDriver.new(
-      'localhost',
-      4444,
-      '*firefox',
-      "http://localhost:#{port}"
-    )
-    driver.start
-    driver.open('/')
+    agent = WWW::Mechanize.new
+    page = agent.get("http://localhost:#{port}")
 
-    wait_for do
-      driver.is_text_present("Welcome to the Wonderful World of FitNesse!")
-    end
+    page.body.should include("Welcome to the Wonderful World of FitNesse!")
   end
 
   def wait_for

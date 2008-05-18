@@ -6,8 +6,7 @@ require "rubygems"
 require "spec"
 require "lsof"
 require "timeout"
-require "selenium"
-require "polonium"
+require "mechanize"
 
 Spec::Runner.configure do |config|
   config.mock_with :rr
