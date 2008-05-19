@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = "fitnesse"
+  s.name = "fitnesse-ruby"
   s.version = "0.1.0"
   s.date = "2008-05-18"
   s.summary = "The fitnesse server packaged as a convenient gem (version 20070619)."
