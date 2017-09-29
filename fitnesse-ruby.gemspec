@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name = "fitnesse-ruby"
-  s.version = "0.1.0"
-  s.date = "2008-05-18"
-  s.summary = "The fitnesse server packaged as a convenient gem (version 20070619)."
+  s.version = "0.2.0"
+  s.date = "2017-09-29"
+  s.summary = "The fitnesse server packaged as a convenient gem (version 20161106)."
   s.email = "opensource@pivotallabs.com"
-  s.homepage = "http://github.com/pivotal/fitnesse-ruby"
+  s.homepage = "http://github.com/pivotalexperimental/fitnesse-ruby"
   s.description = "The fitnesse server packaged as a convenient gem."
   s.has_rdoc = true
   s.authors = ["Brian Takita"]
