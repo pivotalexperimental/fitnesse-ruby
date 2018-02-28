@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name = "fitnesse-ruby"
-  s.version = "0.2.0"
-  s.date = "2017-09-29"
-  s.summary = "The fitnesse server packaged as a convenient gem (version 20161106)."
+  s.version = "0.3.0"
+  s.date = "2018-02-28"
+  s.summary = "The fitnesse server packaged as a convenient gem (version 20180127)."
   s.email = "opensource@pivotallabs.com"
   s.homepage = "http://github.com/pivotalexperimental/fitnesse-ruby"
   s.description = "The fitnesse server packaged as a convenient gem."
