@@ -1,13 +1,13 @@
 Gem::Specification.new do |s|
   s.name = "fitnesse-ruby"
-  s.version = "0.3.0"
-  s.date = "2018-02-28"
-  s.summary = "The fitnesse server packaged as a convenient gem (version 20180127)."
-  s.email = "opensource@pivotallabs.com"
-  s.homepage = "http://github.com/pivotalexperimental/fitnesse-ruby"
+  s.version = "0.4.0"
+  s.date = "2019-02-22"
+  s.summary = "The fitnesse server packaged as a convenient gem (version 20190216)."
+  s.email = "reed@doctible.com"
+  s.homepage = "http://github.com/Doctible/fitnesse-ruby"
   s.description = "The fitnesse server packaged as a convenient gem."
   s.has_rdoc = true
-  s.authors = ["Brian Takita"]
+  s.authors = ["Brian Takita", "Reed Law"]
   files = [
     "README.markdown", "Rakefile", "fitnesse-ruby.gemspec", "bin/fitnesse",
     "lib/fitnesse.rb", "core/fitnesse.jar", "spec/example_wiki_root",
