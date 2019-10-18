@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name = 'fitnesse-ruby'
-  s.version = '0.4.1'
-  s.date = '2019-02-27'
-  s.summary = 'The fitnesse server packaged as a gem (version 20190216).'
+  s.version = '0.5.0'
+  s.date = '2019-10-18'
+  s.summary = 'The fitnesse server packaged as a gem (version 20190716).'
   s.email = 'reed@doctible.com'
   s.homepage = 'http://github.com/Doctible/fitnesse-ruby'
   s.description = 'The fitnesse server packaged as a convenient gem.'
