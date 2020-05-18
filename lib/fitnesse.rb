@@ -5,7 +5,7 @@ class Fitnesse
   end
 
   def start
-    system "java -cp #{jar_path} fitnesse.FitNesse #{argv.join(' ')}"
+    system "java -jar #{jar_path} #{argv.join(' ')}"
   end
 
   def jar_path
